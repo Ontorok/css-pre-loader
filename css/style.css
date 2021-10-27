@@ -1,0 +1,48 @@
+#selection {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 5px dotted black;
+  border-radius: 50%;
+  animation: spin 5s linear infinite;
+}
+.squre {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 5px dotted black;
+  animation: spin 5s linear infinite;
+}
+
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
